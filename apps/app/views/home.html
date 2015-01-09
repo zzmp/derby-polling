@@ -1,2 +1,6 @@
 <index:>
   <p>Home</p>
+
+  {{each polls as #poll}}
+    <a href="/{{#poll.id}}">{{#poll.title}}</a><br>
+  {{/each}}

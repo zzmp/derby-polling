@@ -1,0 +1,16 @@
+<index:>
+  POLL: {{#root.$render.params.poll}}
+
+  <br>
+  <div class="questions">
+  QUESTIONS:<br>
+  {{each questions as #question}}
+    {{#question.id}} - {{#question.question}}<br>
+  {{/each}}
+  </div>
+  <div class="answers">
+  ANSWERS:<br>
+  {{each answers as #answer}}
+    {{#answer.question}} - {{#answer.value}}<br>
+  {{/each}}
+  </div>
